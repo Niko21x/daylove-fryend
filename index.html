@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi amor</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('img/peak2.jpg') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+        }
+
+        h1, h2 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            position: relative;
+            bottom: 60px;
+        }
+
+        h1 {
+            font-size: 8vw;
+            animation: fadeInOut 3s infinite;
+        }
+
+        h2 {
+            font-size: 4vw;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        button {
+            font-size: 2.5vw;
+            padding: 15px 30px;
+            margin-top: 430px;
+            border: none;
+            margin-left: 230px;
+            background-color: #33d6ff;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 5px 20px rgb(223, 19, 12); /* Sombra más visible */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+
+        }
+
+        /* Cambios al hacer hover */
+        .regalo:hover {
+            background-color: #ff5733; /* Color de fondo al hacer hover */
+            box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.8); /* Sombra más pronunciada */
+        }
+
+        /* Cambios al hacer clic */
+        .regalo:active {
+            background-color: #c70039; /* Color de fondo cuando se presiona */
+            box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.7); /* Efecto de presión */
+        }
+
+        .sorprise{
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+    
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Para la mujer mas bella de este planeta💕</h1>
+        <h2>Tengo un regalo para ti &#128153;</h2>
+        <button class="regalo" onclick="window.location.href='rosas.html'"><h3 class="sorprise">Ver regalo &#128151;</h3></button>
+    </div>
+</body>
+</html>
